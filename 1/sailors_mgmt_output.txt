@@ -1,0 +1,65 @@
+MySQL  localhost:33060+ ssl  sailors  SQL > describe sailors;
++--------+-------------+------+-----+---------+----------------+
+| Field  | Type        | Null | Key | Default | Extra          |
++--------+-------------+------+-----+---------+----------------+
+| sid    | int(11)     | NO   | PRI | NULL    | auto_increment |
+| sname  | varchar(30) | YES  |     | NULL    |                |
+| rating | int(11)     | YES  |     | NULL    |                |
+| age    | int(11)     | YES  |     | NULL    |                |
++--------+-------------+------+-----+---------+----------------+
+4 rows in set (0.0007 sec)
+MySQL  localhost:33060+ ssl  sailors  SQL > describe boats;
++--------+-------------+------+-----+---------+----------------+
+| Field  | Type        | Null | Key | Default | Extra          |
++--------+-------------+------+-----+---------+----------------+
+| bid    | int(11)     | NO   | PRI | NULL    | auto_increment |
+| bname  | varchar(20) | YES  |     | NULL    |                |
+| color  | varchar(10) | YES  |     | NULL    |                |
+| length | int(11)     | YES  |     | NULL    |                |
+| cost   | int(11)     | YES  |     | NULL    |                |
++--------+-------------+------+-----+---------+----------------+
+5 rows in set (0.0008 sec)
+MySQL  localhost:33060+ ssl  sailors  SQL > describe reserves;
++-------+---------+------+-----+---------+-------+
+| Field | Type    | Null | Key | Default | Extra |
++-------+---------+------+-----+---------+-------+
+| sid   | int(11) | NO   | PRI | NULL    |       |
+| bid   | int(11) | NO   | PRI | NULL    |       |
+| day   | date    | NO   | PRI | NULL    |       |
++-------+---------+------+-----+---------+-------+
+3 rows in set (0.0007 sec)
+MySQL  localhost:33060+ ssl  sailors  SQL > describe employees;
++--------+-------------+------+-----+---------+----------------+
+| Field  | Type        | Null | Key | Default | Extra          |
++--------+-------------+------+-----+---------+----------------+
+| eid    | int(11)     | NO   | PRI | NULL    | auto_increment |
+| ename  | varchar(30) | YES  |     | NULL    |                |
+| hrwage | int(11)     | YES  |     | NULL    |                |
++--------+-------------+------+-----+---------+----------------+
+3 rows in set (0.0007 sec)
+MySQL  localhost:33060+ ssl  sailors  SQL > describe hours;
++--------------+---------+------+-----+---------+-------+
+| Field        | Type    | Null | Key | Default | Extra |
++--------------+---------+------+-----+---------+-------+
+| eid          | int(11) | NO   | PRI | NULL    |       |
+| week         | date    | NO   | PRI | NULL    |       |
+| hours_worked | int(11) | YES  |     | NULL    |       |
++--------------+---------+------+-----+---------+-------+
+3 rows in set (0.0007 sec)
+
+PS C:\Users\alira\Documents\College\Fall 2019\ECE 464> pytest
+============================================================================================================================ test session starts =============================================================================================================================
+platform win32 -- Python 3.6.7, pytest-5.2.1, py-1.8.0, pluggy-0.13.0
+rootdir: C:\Users\alira\Documents\College\Fall 2019\ECE 464
+collected 3 items
+
+test_sailors_mgmt.py ...                                                                                                                                                                                                                                                [100%]
+
+============================================================================================================================= 3 passed in 1.10s ==============================================================================================================================
+Exception ignored in: <function _ConnectionRecord.checkout.<locals>.<lambda> at 0x000002AD8E6FCD08>
+Traceback (most recent call last):
+  File "c:\users\alira\appdata\local\programs\python\python36\lib\site-packages\sqlalchemy\pool\base.py", line 503, in <lambda>
+  File "c:\users\alira\appdata\local\programs\python\python36\lib\site-packages\sqlalchemy\pool\base.py", line 689, in _finalize_fairy
+  File "c:\users\alira\appdata\local\programs\python\python36\lib\logging\__init__.py", line 1336, in error
+  File "c:\users\alira\appdata\local\programs\python\python36\lib\logging\__init__.py", line 1548, in isEnabledFor
+TypeError: '>=' not supported between instances of 'int' and 'NoneType'
