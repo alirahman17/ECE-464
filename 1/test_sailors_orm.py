@@ -72,6 +72,7 @@ def sailors_assert(sql, orm):
 
     assert sql_check == orm_check
 
+# pytest functions to verify answers from part 1
 def test_question_1():
     sql = "SELECT s.sid, s.sname, s.rating, s.age, m.bid FROM sailors AS s, (SELECT bid, sid, MAX(total) FROM (SELECT bid, sid, count(*) AS total FROM reserves GROUP BY sid,bid ORDER BY bid ASC, total DESC) AS t GROUP BY bid) AS m WHERE s.sid = m.sid;"
     t = s.query(Reservation.bid, Reservation.sid, func.count("*").label('total')).group_by(Reservation.sid, Reservation.bid).order_by(asc(Reservation.bid), desc(func.count())).subquery('t')

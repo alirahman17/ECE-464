@@ -1,3 +1,6 @@
+Output of Assignment 1, Part 3
+file: test_sailors_mgmt.py
+
 MySQL  localhost:33060+ ssl  sailors  SQL > describe sailors;
 +--------+-------------+------+-----+---------+----------------+
 | Field  | Type        | Null | Key | Default | Extra          |
@@ -46,6 +49,11 @@ MySQL  localhost:33060+ ssl  sailors  SQL > describe hours;
 | hours_worked | int(11) | YES  |     | NULL    |       |
 +--------------+---------+------+-----+---------+-------+
 3 rows in set (0.0007 sec)
+
+The above tables were the ones used for part 3 of the first assignment.  The sailors, and reserves tables remain the same as in part 1 and 2, however the boats table is modified to include a cost for a given boat.  There is also the addition of two new tables, employees and hours which indicate the employee information, and how many hours each employee worked in a given week.  These tables were all generated using the sqlalchemy framework in python with certain constraints.  The code is commented to indicate any additional information.
+
+
+Pytest Output:
 
 PS C:\Users\alira\Documents\College\Fall 2019\ECE 464> pytest
 ============================================================================================================================ test session starts =============================================================================================================================
