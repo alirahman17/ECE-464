@@ -1,0 +1,66 @@
+2019-11-23 18:00:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amctheatres.com/movies/frozen-2-49085/showtimes/all/2019-11-30/amc-kips-bay-15/all>
+{'date': 'Sat, Nov 30',
+ 'movie_name': 'Frozen 2',
+ 'theater_name': 'AMC Kips Bay 15',
+ 'time': '9:30am',
+ 'type': 'Digital'}
+2019-11-23 18:00:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amctheatres.com/movies/frozen-2-49085/showtimes/all/2019-11-30/amc-kips-bay-15/all>
+{'date': 'Sat, Nov 30',
+ 'movie_name': 'Frozen 2',
+ 'theater_name': 'AMC Kips Bay 15',
+ 'time': '12:10pm',
+ 'type': 'Digital'}
+2019-11-23 18:00:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amctheatres.com/movies/frozen-2-49085/showtimes/all/2019-11-30/amc-kips-bay-15/all>
+{'date': 'Sat, Nov 30',
+ 'movie_name': 'Frozen 2',
+ 'theater_name': 'AMC Kips Bay 15',
+ 'time': '2:50pm',
+ 'type': 'Digital'}
+2019-11-23 18:00:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amctheatres.com/movies/frozen-2-49085/showtimes/all/2019-11-30/amc-kips-bay-15/all>
+{'date': 'Sat, Nov 30',
+ 'movie_name': 'Frozen 2',
+ 'theater_name': 'AMC Kips Bay 15',
+ 'time': '5:30pm',
+ 'type': 'Digital'}
+2019-11-23 18:00:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amctheatres.com/movies/frozen-2-49085/showtimes/all/2019-11-30/amc-kips-bay-15/all>
+{'date': 'Sat, Nov 30',
+ 'movie_name': 'Frozen 2',
+ 'theater_name': 'AMC Kips Bay 15',
+ 'time': '8:10pm',
+ 'type': 'Digital'}
+2019-11-23 18:00:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amctheatres.com/movies/frozen-2-49085/showtimes/all/2019-11-30/amc-kips-bay-15/all>
+{'date': 'Sat, Nov 30',
+ 'movie_name': 'Frozen 2',
+ 'theater_name': 'AMC Kips Bay 15',
+ 'time': '10:45pm',
+ 'type': 'Digital'}
+2019-11-23 18:00:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amctheatres.com/movies/frozen-2-49085/showtimes/all/2019-11-30/amc-kips-bay-15/all>
+{'date': 'Sat, Nov 30',
+ 'movie_name': 'Dark Waters',
+ 'theater_name': 'AMC Kips Bay 15',
+ 'time': '10:00am',
+ 'type': 'Digital'}
+2019-11-23 18:00:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amctheatres.com/movies/frozen-2-49085/showtimes/all/2019-11-30/amc-kips-bay-15/all>
+{'date': 'Sat, Nov 30',
+ 'movie_name': 'Dark Waters',
+ 'theater_name': 'AMC Kips Bay 15',
+ 'time': '1:00pm',
+ 'type': 'Digital'}
+2019-11-23 18:00:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amctheatres.com/movies/frozen-2-49085/showtimes/all/2019-11-30/amc-kips-bay-15/all>
+{'date': 'Sat, Nov 30',
+ 'movie_name': 'Dark Waters',
+ 'theater_name': 'AMC Kips Bay 15',
+ 'time': '4:00pm',
+ 'type': 'Digital'}
+2019-11-23 18:00:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amctheatres.com/movies/frozen-2-49085/showtimes/all/2019-11-30/amc-kips-bay-15/all>
+{'date': 'Sat, Nov 30',
+ 'movie_name': 'Dark Waters',
+ 'theater_name': 'AMC Kips Bay 15',
+ 'time': '7:00pm',
+ 'type': 'Digital'}
+2019-11-23 18:00:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amctheatres.com/movies/frozen-2-49085/showtimes/all/2019-11-30/amc-kips-bay-15/all>
+{'date': 'Sat, Nov 30',
+ 'movie_name': 'Dark Waters',
+ 'theater_name': 'AMC Kips Bay 15',
+ 'time': '10:00pm',
+ 'type': 'Digital'}
