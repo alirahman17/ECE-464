@@ -1,14 +1,12 @@
 # Assignment 1, Part 3
-from ipdb import set_trace
 from sqlalchemy import create_engine, MetaData
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Integer, String, Column, DateTime, Date
+from sqlalchemy import Integer, String, Column, Date
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import ForeignKey, Table
 from sqlalchemy.orm import backref, relationship
 from sqlalchemy import PrimaryKeyConstraint, extract
-from sqlalchemy.sql import func, asc, desc, distinct
-from sqlalchemy.orm import load_only
+from sqlalchemy.sql import func, desc, distinct
 import pytest
 
 # Instantiate Connection
@@ -24,11 +22,23 @@ metadata = MetaData(engine)
 Base = declarative_base()
 
 # Table Creation
-sailors = Table('sailors', metadata, Column('sid', Integer, primary_key = True), Column('sname', String(30)), Column('rating', Integer), Column('age', Integer))
-boats = Table('boats', metadata, Column('bid', Integer, primary_key = True), Column('bname', String(20)), Column('color', String(10)), Column('length', Integer), Column('cost', Integer))
-reserves = Table('reserves', metadata, Column('sid', Integer, ForeignKey("sailors.sid"), primary_key = True), Column('bid', Integer, ForeignKey("boats.bid"), primary_key = True), Column('day', Date, primary_key = True))
-employees = Table('employees', metadata, Column('eid', Integer, primary_key = True), Column('ename', String(30)), Column('hrwage', Integer))
-hours = Table('hours', metadata, Column('eid', Integer, ForeignKey("employees.eid"), primary_key = True), Column('week', Date, primary_key = True), Column('hours_worked', Integer))
+sailors = Table('sailors', metadata, Column('sid', Integer, primary_key = True),
+        Column('sname', String(30)), Column('rating', Integer),
+        Column('age', Integer))
+boats = Table('boats', metadata, Column('bid', Integer, primary_key = True),
+        Column('bname', String(20)), Column('color', String(10)),
+        Column('length', Integer), Column('cost', Integer))
+reserves = Table('reserves', metadata, Column('sid', Integer,
+        ForeignKey("sailors.sid"), primary_key = True),
+        Column('bid', Integer, ForeignKey("boats.bid"), primary_key = True),
+        Column('day', Date, primary_key = True))
+employees = Table('employees', metadata,
+        Column('eid', Integer, primary_key = True), Column('ename', String(30)),
+        Column('hrwage', Integer))
+hours = Table('hours', metadata,
+        Column('eid', Integer, ForeignKey("employees.eid"), primary_key = True),
+        Column('week', Date, primary_key = True),
+        Column('hours_worked', Integer))
 
 # Drop any previous data and create new data
 metadata.drop_all()

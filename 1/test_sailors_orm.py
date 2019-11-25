@@ -1,4 +1,4 @@
-from ipdb import set_trace
+# Assignment 1, Part 2
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Integer, String, Column, DateTime
@@ -7,7 +7,6 @@ from sqlalchemy import ForeignKey
 from sqlalchemy.orm import backref, relationship
 from sqlalchemy import PrimaryKeyConstraint
 from sqlalchemy.sql import func, asc, desc, distinct
-from sqlalchemy.orm import load_only
 
 engine = create_engine(
       "mysql+pymysql://root:@localhost/sailors?host=localhost?port=3306", echo=True)
